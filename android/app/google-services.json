@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "597450852457",
+    "project_id": "soma-mentoring",
+    "storage_bucket": "soma-mentoring.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597450852457:android:65f77db758526be9b23af8",
+        "android_client_info": {
+          "package_name": "com.okane.somamentoring"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKsZwT_zOBSWKoXT7cUWA8CkFLcYCLXwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597450852457:android:cc0a2f08c7bc2e60b23af8",
+        "android_client_info": {
+          "package_name": "com.okane.somamentoringmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKsZwT_zOBSWKoXT7cUWA8CkFLcYCLXwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
