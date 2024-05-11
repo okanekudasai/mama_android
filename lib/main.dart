@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:mama/schedule.dart';
@@ -5,6 +6,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:mama/firebase_options.dart';
 import 'package:mama/util.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+
+import 'Join.dart';
 
 
 void main() async {
@@ -61,6 +64,8 @@ class _LoginScreenState extends State<LoginScreen> {
               if(!is_pending)
                 Column(
                   children: [
+                    const Text("어서오세요"),
+                    const SizedBox(height: 40),
                     const TextField(
                         decoration: InputDecoration(
                           labelText: '아이디',
@@ -97,6 +102,13 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                       child: const Text("로그인"),
                     ),
+                    const SizedBox(height: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Join()));
+                      },
+                      child: Text("회원 가입")
+                    )
                   ],
                 ),
               if (is_pending)
