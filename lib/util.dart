@@ -1,4 +1,5 @@
 import 'package:http/http.dart' as http;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class Util {
   Util._privateConstructor();
@@ -6,6 +7,7 @@ class Util {
   factory Util() => _util;
 
   Future<bool> make_bool_request(bool flag) async {
+    print("@@@@@@@@@@@@@@!!!!" + dotenv.env['Foo'].toString());
     var url = Uri.parse('http://150.230.254.127:8080/api/test/' + flag.toString());
     var response = await http.get(url);
 

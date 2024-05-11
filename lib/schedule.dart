@@ -8,7 +8,6 @@ import 'package:fluttertoast/fluttertoast.dart';
 class ScheduleScreen extends StatelessWidget {
   DateTime? currentTime;
   bool close_flag = false;
-
   @override
   Widget build(BuildContext context) {
     return PopScope(
